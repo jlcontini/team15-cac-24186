@@ -4,6 +4,7 @@ Repositorio Github de Proyecto Web del Grupo 15
 Comision 24186
 Codo a Codo - Fullstack Python - 2024
 
+
 INTEGRANTES
 
 Jose Luis Contini
@@ -16,3 +17,8 @@ Emmanuel Flores
 flores.emmanuel@gmail.com
 
 Ivan Camacho
+camacho.ivan123@gmail.com
+
+
+TABLERO TRELLO
+https://trello.com/b/KgNNURY4
