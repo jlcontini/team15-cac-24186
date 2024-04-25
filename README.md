@@ -16,9 +16,6 @@ joacisneros@gmail.com
 Emmanuel Flores
 flores.emmanuel@gmail.com
 
-Ivan Camacho
-camacho.ivan123@gmail.com
-
 
 TABLERO TRELLO
 https://trello.com/b/KgNNURY4
