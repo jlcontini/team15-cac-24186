@@ -2,12 +2,39 @@
 /* Hoja de estilos CSS */
 
 :root {
+    /* color de prueba para corroborar que no se vea algo de fondo = margenes 0 */
     background-color: red;
-
 }
 
-* { 
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
     background-color: yellow;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
 
+body {
+    
+}
+
+header {
+    
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+.nav-bar {
+    color: black;
+
+}
