@@ -33,7 +33,10 @@ main {
 }
 
 footer {
-
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
+    
 }
 
 .nav-bar {
