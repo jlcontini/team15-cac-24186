@@ -4,43 +4,58 @@
 /* <!-- COLORES LOGO "PIZZA ¡YAPA!": ROJO #E40C0C; NEGRO #291010;  --> */
 
 :root {
-    /* color de prueba para corroborar que no se vea algo de fondo = margenes 0 */
-    background-color: #E40C0C;
-    color: #291010;
-        
-}
-
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
+    /* pseudo-clase de CSS, selecciona el elemento raíz.
+    Equivale a <HTML> pero con mayor especificidad. */
+ 
 }
 
 html {
+    /* Colores del LOGO DE MARCA
+    background-color: #E40C0C;
+    color: #291010;        */
+    margin: 0;
+    border: 0; 
+    padding: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
 }
 
 body {
-    
+    margin: 0;
+    border: 0; 
+    padding: 0;
 }
 
 header {
+    margin: 0;
+    border: 0; 
+    padding: 0;
     background-color: snow;
+
+}
+
+main {
+    
 }
 
 body > main {
+    margin: 0;
+    border: 0; 
+    padding: 0;
     background-color: blue;
     max-width: 800px;
 
 }
 
 #Promos {
-
+    margin: 0;
+    border: 0; 
+    padding: 0;    
 }
 
 #Opiniones {
-    background: linear-gradient();
+    background: linear-gradient(#fff, #000);
     background-image: url('/static/img/pizza-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -53,14 +68,6 @@ body > main {
 .promos {
     min-width: 300px;
     min-height: 50px;
-}
-
-header {
-    
-}
-
-main {
-
 }
 
 footer {

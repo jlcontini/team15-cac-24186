@@ -3,21 +3,13 @@
 
 /* <!-- COLORES LOGO "PIZZA ¡YAPA!": ROJO #E40C0C; NEGRO #291010;  --> */
 
-:root {
-    /* color de prueba para corroborar que no se vea algo de fondo = margenes 0 */
-    background-color: red;
-}
-
-* {
+html {
+    height: 100%;
+    width: 100%;
     margin: 0;
     border: 0;
     padding: 0;
     background-color: yellow;
-}
-
-html {
-    height: 100%;
-    width: 100%;
 }
 
 body {
