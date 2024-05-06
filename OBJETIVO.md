@@ -52,7 +52,7 @@ Enlace a otras 3 páginas con información adicional:
 
 Menú (completo)
 Sucursal
-Contacto (con formulario)
+Contacto (con formulario - (formulario debe validar los datos con javascript))
 Quienes somos
 [Registro] - lo quitamos por ahora
 ‌
@@ -93,7 +93,7 @@ Pagina Menu
 
 José Luis:
 MAIN pagina index
-Pagina de Contacto
+Pagina de Contacto (formulario debe validar los datos con javascript)
 Pagina de Sucursales
 
 Emmanuel:
