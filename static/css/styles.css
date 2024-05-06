@@ -5,14 +5,15 @@
 
 :root {
     /* color de prueba para corroborar que no se vea algo de fondo = margenes 0 */
-    background-color: red;
+    background-color: #E40C0C;
+    color: #291010;
+        
 }
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: yellow;
 }
 
 html {
@@ -22,6 +23,36 @@ html {
 
 body {
     
+}
+
+header {
+    background-color: snow;
+}
+
+body > main {
+    background-color: blue;
+    max-width: 800px;
+
+}
+
+#Promos {
+
+}
+
+#Opiniones {
+    background: linear-gradient();
+    background-image: url('/static/img/pizza-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    color: black;
+}
+
+.promos {
+    min-width: 300px;
+    min-height: 50px;
 }
 
 header {
