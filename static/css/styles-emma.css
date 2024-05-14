@@ -32,3 +32,25 @@ footer {
     color: black;
 
 }
+
+.grid-quienes-somos {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 50% 50%;
+    background: steelblue;
+}
+
+.qs-slide {
+    overflow: hidden;
+}
+
+
+.img {
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .grid-quienes-somos {
+        grid-template-columns: 1fr;
+    }
+}
