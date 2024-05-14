@@ -19,9 +19,10 @@ html {
     /* Colores del LOGO DE MARCA
     background-color: #E40C0C;
     color: #291010;        */
+    background-color: #E40C0C;
     margin: 0;
     border: 0; 
-    padding: 0;
+    padding: 20px;
     max-width: 1100px;
     height: 100%;
     width: 100%;
@@ -51,19 +52,35 @@ body > main {
     background-color: blue;
 }
 
-#Promos {
 
+.promos {
+    background-color: aqua;
 }
 
-.container-promos {
-    display: grid;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    background-color: aquamarine;
     border: 3px solid black;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: ();
+
 }
 
-.container-promos div {
+.flex-container > div {
+    background-color: grey;
+    margin: 5%;
+    padding: 15px;
+    width: 20%;
+    font-size: 1.5rem;
+    
+}
 
+.promo-img {
+    max-width: ;
 }
 
 #Opiniones {
@@ -78,8 +95,7 @@ body > main {
 }
 
 .promos {
-    min-width: 300px;
-    min-height: 50px;
+
 }
 
 footer {
