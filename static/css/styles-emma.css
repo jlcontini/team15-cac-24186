@@ -9,44 +9,44 @@ html {
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: snow;
 }
 
-body {
-    
-}
-
-header {
-    
-}
-
-main {
-
-}
-
-footer {
-
-}
-
-.nav-bar {
-    color: black;
-
+.title {
+    text-align: center;
 }
 
 .grid-quienes-somos {
     display: grid;
-    padding: 5px;
     grid-template-columns: 50% 50%;
-    background: steelblue;
+    align-items: center;
 }
 
-.qs-slide {
+strong {
+    color: #E40C0C;
+}
+
+.column {
+    padding-left: 20px;
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
 .img {
     width: 100%;
+}
+
+footer {
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
+    
 }
 
 @media screen and (max-width: 720px) {
