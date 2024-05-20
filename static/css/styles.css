@@ -10,6 +10,7 @@
 }
 
 * {
+    font-family: "";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,30 +20,26 @@ html {
     /* Colores del LOGO DE MARCA
     background-color: #E40C0C;
     color: #291010;        */
-    background-color: #E40C0C;
-    margin: 0;
+    background-color: #fff;
+    margin: auto;
     border: 0; 
     padding: 20px;
-    max-width: 1100px;
+    max-width: 1200px;
     height: 100%;
     width: 100%;
 }
 
-body {
-    margin: 0;
-    border: 0; 
-    padding: 0;
-}
-
 header {
+    background-color: #E40C0C;
     margin: 0;
     border: 0; 
     padding: 0;
-    background-color: snow;
-
 }
 
 body {
+    background-color: #E40C0C;
+    display: block;
+    position: center;
     margin: 0;
     border: 0; 
     padding: 0;
@@ -52,35 +49,70 @@ body > main {
     background-color: blue;
 }
 
-
-.promos {
-    background-color: aqua;
+.promos-big-box {
+    background-color: green;
 }
 
-.flex-container {
+.promos-flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
-
     background-color: aquamarine;
     border: 3px solid black;
+    padding: 2em;
+}
+
+.promo-container {
+    background-color: snow;
+    padding: 2em;
+    margin: 20px 10px;
+    border: 3px solid #3b3b30;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.caja-img-promo {
+    width: 267px;
+    height: 211px;
 
 }
 
-.flex-container > div {
-    background-color: grey;
-    margin: 5%;
-    padding: 15px;
-    width: 20%;
-    font-size: 1.5rem;
-    
+.caja-info-promo {
+    width: 267px;
+    height: 211px;
+    padding: 10px 10px;
 }
 
 .promo-img {
     max-width: ;
+}
+
+.nombre-producto {
+    display: block;
+    color: #3b3b30;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: normal;
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.descripcion-producto {
+    display: block;
+    color: #3b3b30;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: normal;
+    display: flex;
+
+
 }
 
 #Opiniones {
