@@ -39,6 +39,7 @@ strong {
 
 .slider-frame {
 	width: 100%;
+    max-width: 1080px;
     height: auto;
 	margin: auto;
 	overflow: hidden;
