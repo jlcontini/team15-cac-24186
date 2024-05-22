@@ -30,6 +30,7 @@ html {
 }
 
 header {
+
     background-color: #E40C0C;
     margin: 0;
     border: 0; 
@@ -64,7 +65,7 @@ body > main {
 
 }
 
-.promos-flex-container {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -79,7 +80,7 @@ body > main {
     padding: 0;
     border: 3px solid #3b3b30;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .caja-img-promo {
@@ -149,3 +150,50 @@ footer {
     color: black;
 
 }
+
+
+/* -- PAGINA SUCURSALES -- */
+
+.box-container {
+    display: block;
+    text-align: left;
+}
+
+.box-title {
+    text-align: center;
+    margin: 3px;
+}
+
+.box-subtitle {
+    text-align: center;
+    margin: 2px;
+
+}
+.suc-box-container {
+    width: 300px;
+    height: 330px;
+    background-color: rgb(219, 106, 106);
+    color: #fff;
+    margin: 10px;
+
+}
+
+.suc-box-container > h2 {
+    padding: 3px 12px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.suc-box-container > p {
+    padding: 3px 12px;
+}
+
+.map-box-container {
+    width: 250px;
+    display: block;
+    margin: 0;
+    padding: 20px 0;
+    border: 0;
+    
+}
+
