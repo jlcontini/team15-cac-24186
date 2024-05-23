@@ -39,29 +39,33 @@
             </div>
 
             <div class="box-form-container">
-                
+
                 <form action="mailto:joseluiscontini@yahoo.com.ar" method="post" enctype="text/plain">
 
                     <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" required size="30" maxlength="100" placeholder="...su nombre">
+                    <input type="text" id="nombre" name="nombre" size="30" maxlength="100" placeholder="...su nombre">
 
                     <label for="apellido">Apellido: </label>
-                    <input type="text" id="apellido" name="apellido" required size="30" maxlength="100" placeholder="...su apellido">
+                    <input type="text" id="apellido" name="apellido" size="30" maxlength="100" placeholder="...su apellido">
 
                     <label for="email">Correo electrónico: </label>
-                    <input type="text" id="email" name="email" required size="30" maxlength="120" placeholder="...nombreapellido@servidor.com">
+                    <input type="text" id="email" name="email" size="30" maxlength="120" placeholder="...nombreapellido@servidor.com">
 
                     <label for="coment">Mensaje: </label>
-                    <textarea name="coment" id="coment" required size="30" maxlength="360" placeholder="...aquí, tu comentario" rows="10" cols="30"></textarea>
+                    <textarea name="coment" id="coment" size="30" maxlength="360" placeholder="...aquí, tu comentario" rows="10" cols="30"></textarea>
 
-                    <div class="moreinfo">Recibir más información</div>
+                    <div class="more-info">
 
-                    <input type="radio" name="more-info" value="1" checked>Si
-                    <input type="radio" name="more-info" value="0">No
-
-                    <input type="checkbox" name="news-suscription">Suscribirse a nuestra Newsletter
+                        <p>Quisiera recibir novedades y ofertas</p>
+                        <input type="radio" name="more-info" value="1" checked><p>Si</p>
+                        <input type="radio" name="more-info" value="0"><p>No</p>
+                        
+                        <input class="checkbox" type="checkbox" name="news-suscription" checked>
+                        <p>Suscribirse a nuestra Newsletter</p>
                     
-                    <input type="submit" value="Enviar">
+                    </div>
+
+                    <input class="button-submit" type="submit" value="Enviar">
 
 
 

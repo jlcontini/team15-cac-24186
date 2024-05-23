@@ -258,9 +258,30 @@ footer {
 .box-form-container label {
     display: block;
     width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.box-form-container input {
+.box-form-container input, textarea {
     display: block;
-    width: auto;
+    margin: 10px 0;
+    padding: 10px 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.more-info input, .more-info p  {
+    margin: 0 auto;
+
+}
+
+.checkbox {
+}
+
+.button-submit {
+    background-color: ;
+    color: black;
+    font-size: 1.5rem;
 }
