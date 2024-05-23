@@ -246,3 +246,21 @@ footer {
 
 }
 
+/* -- PAGINA CONTACTO -- */
+
+.box-form-container {
+    margin: 0 auto;
+    border: 0;
+    padding: 10px;
+    width: 400px;
+}
+
+.box-form-container label {
+    display: block;
+    width: 100%;
+}
+
+.box-form-container input {
+    display: block;
+    width: auto;
+}

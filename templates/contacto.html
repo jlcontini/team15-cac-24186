@@ -6,7 +6,7 @@
     <!-- Enlace con FONTAWESOME -->
     <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
     <!-- Enlace con HOJA DE ESTILOS CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles-jose.css">
     
     <!-- Aqui va el TITULO DE LA PAGINA -->
     <title>CONTACTO</title>
@@ -17,18 +17,69 @@
     <header>
         <!-- Aqui comienza el HEADER -->
 
-        <h1>PAGINA DE CONTACTO (referencia) </h1> <!-- ESTO ESD DE REFERENCIA; eliminar al final -->
+        <h1>HEADER - PAGINA DE CONTACTO (referencia) </h1> <!-- ESTO ESD DE REFERENCIA; eliminar al final -->
 
         
 
     </header>
+
+
     <main>
         <!-- Aqui comienza el MAIN -->
+        <!-- El sitio web debe incluir un formulario de contacto, con al menos 5
+            campos que incluya (un checkbox o radiobutton), un select y una
+            imagen, con validación realizada mediante JavaScript para que los
+            campos sean obligatorios. -->
+
+
+        <div class="flex-container"></div>
+        
+            <div class="box-title">
+                <h2>¡Dejanos tus comentarios!</h2>
+            </div>
+
+            <div class="box-form-container">
+                
+                <form action="mailto:joseluiscontini@yahoo.com.ar" method="post" enctype="text/plain">
+
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required size="30" maxlength="100" placeholder="...su nombre">
+
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" required size="30" maxlength="100" placeholder="...su apellido">
+
+                    <label for="email">Correo electrónico: </label>
+                    <input type="text" id="email" name="email" required size="30" maxlength="120" placeholder="...nombreapellido@servidor.com">
+
+                    <label for="coment">Mensaje: </label>
+                    <textarea name="coment" id="coment" required size="30" maxlength="360" placeholder="...aquí, tu comentario" rows="10" cols="30"></textarea>
+
+                    <div class="moreinfo">Recibir más información</div>
+
+                    <input type="radio" name="more-info" value="1" checked>Si
+                    <input type="radio" name="more-info" value="0">No
+
+                    <input type="checkbox" name="news-suscription">Suscribirse a nuestra Newsletter
+                    
+                    <input type="submit" value="Enviar">
+
+
+
+
+                </form>
+                    
+
+            </div>
+
+        </div>
 
     </main>
     <footer>
+        
         <!-- Aqui comienza el FOOTER -->
+        <h1>REFERENCIA DE FOOTER</h1>
 
+        
     </footer>
     
 </body>
