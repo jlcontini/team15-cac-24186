@@ -9,26 +9,79 @@ html {
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: snow;
 }
 
-body {
-    
+strong {
+    color: #E40C0C;
 }
 
-header {
-    
+.foto {
+    width: 100%;
 }
 
-main {
+.title {
+    text-align: center;
+}
 
+.grid-quienes-somos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.column {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.slider-frame {
+	width: 100%;
+    max-width: 1080px;
+    height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: slide 20s infinite alternate linear;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
 }
 
 footer {
-
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
+    
 }
 
-.nav-bar {
-    color: black;
+@media screen and (max-width: 720px) {
+    .grid-quienes-somos {
+        grid-template-columns: 1fr;
+    }
+}
 
+@keyframes slide {
+	0% {margin-left: 0%;}
+	30% {margin-left: 0%;}
+	
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
+	
+	70% {margin-left: -200%;}
+	95% {margin-left: -200%;}	
 }
