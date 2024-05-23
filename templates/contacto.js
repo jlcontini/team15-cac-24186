@@ -8,7 +8,8 @@ const inputEmail=document.getElementById("email");
 const inputComent=document.getElementById("coment");
 const inputMoreInfo=document.getElementsById("more-info");
 const inputNewsSuscription=document.getElementById("news-suscription");
-
+// error - COMO LO INTEGRO??
+const parrafo=document.getElementById("error");
 
 console.log(inputNombre)
 
