@@ -272,7 +272,7 @@ footer {
     font-weight: 400;
 }
 
-.more-info input, .more-info p  {
+.more-info > input, .more-info p  {
     margin: 0 auto;
 
 }
