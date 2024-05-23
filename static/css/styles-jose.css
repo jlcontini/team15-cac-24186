@@ -11,9 +11,10 @@
 
 * {
     font-family: "";
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 html {
@@ -21,9 +22,9 @@ html {
     background-color: #E40C0C;
     color: #291010;        */
     background-color: #fff;
-    margin: auto;
+    margin: 0 auto;
     border: 0; 
-    padding: 20px;
+    padding: 0 20px;
     max-width: 1200px;
     height: 100%;
     width: 100%;
@@ -47,7 +48,7 @@ body {
 }
 
 body > main {
-    background-color: blue;
+    background-color: lightblue;
 }
 
 .promos-big-box {
@@ -77,20 +78,24 @@ body > main {
 
 .promo-container {
     background-color: snow;
-    padding: 0;
-    border: 3px solid #3b3b30;
-    border-radius: 10px;
+    box-sizing: content-box;
     margin: 10px 10px;
+    border: 3px solid #3b3b30;
+    border-radius: 5px;
+    padding: 0; 
+    width: 267px;    
 }
 
 .caja-img-promo {
-    width: 267px;
+    width: 265px;
     height: 211px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .caja-info-promo {
     width: 267px;
-    height: 211px;
+    height: 116px;
     padding: 10px;
 }
 
@@ -120,24 +125,50 @@ body > main {
     font-size: 0.8em;
     line-height: normal;
     display: flex;
+}
 
+.box-button {
+    margin: 0 auto;
+    border: 0;
+    padding: 30px 20px;
+}
 
+.button-pedi-ahora {
+    background-color: rgba(192, 192, 192, 0.566);
+    color: #E40C0C;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #Opiniones {
-    background: linear-gradient(#fff, #000);
-    background-image: url('/static/img/pizza-1.jpg');
+    background-color: #E40C0C;
+    color: #fff;
+}
+
+.box-background {
+    background-color: #E40C0C;
+    background-image: linear-gradient(to bottom, #E40C0C, #e40c0c6a), url("/static/img/pizza-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    
-    color: black;
 }
 
-.promos {
+.box-opiniones{
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: 0;
+    color: #fff;
+}
+
+.opinion {
+    padding: 0 0 10px 0;
 
 }
+
+
+/* -- FOOTER -- */
 
 footer {
     padding: 20px;
@@ -160,8 +191,11 @@ footer {
 }
 
 .box-title {
+    background-color: grey;
+    color: #000;
     text-align: center;
-    margin: 3px;
+    margin: 0 auto;
+    padding: 3px;
 }
 
 .box-subtitle {
@@ -172,7 +206,7 @@ footer {
 .suc-box-container {
     width: 300px;
     height: 330px;
-    background-color: rgb(219, 106, 106);
+    background-color: #E40C0C;
     color: #fff;
     margin: 10px;
 
@@ -189,11 +223,25 @@ footer {
 }
 
 .map-box-container {
-    width: 250px;
+    width: 300px;
     display: block;
     margin: 0;
     padding: 20px 0;
-    border: 0;
-    
+    border: 0;   
 }
 
+
+/* -- FOOTER -- */
+
+.box-footer {
+
+}
+
+.box-redes {
+    display: flex;
+}
+
+.box-redes img {
+    width: 30px;
+    
+}
