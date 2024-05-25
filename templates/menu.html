@@ -6,30 +6,249 @@
     <!-- Enlace con FONTAWESOME -->
     <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
     <!-- Enlace con HOJA DE ESTILOS CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-    
+    <link rel="stylesheet" href="../static/css/styles-joa.css">
+    <!-- Enlace para icononos "X" y "menu" del menu hamburguesa  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <link rel="shortcut icon" href="../static/img/favicon.png">
+
     <!-- Aqui va el TITULO DE LA PAGINA -->
-    <title>MENU</title>
+    <title>Pizza ¡YAPA! - Menu</title>
 </head>
 
 <body>
     
-    <header>
+    <header class="header">
         <!-- Aqui comienza el HEADER -->
+        <section id="Home" class="logo-nav-container">
 
-        <h1>PAGINA DE MENU (referencia) </h1> <!-- ESTO ESD DE REFERENCIA; eliminar al final -->
+            <!-- LOGO HEADER -->
+            <!-- COLORES: ROJO #E40C0C; NEGRO #291010;  -->
+            <img class="logo" src="../static/img/logo/Pizza ¡YAPA! - Logo Banner 300x100-transparente.png" alt="Pizza ¡YAPA!">
+            
+            <!-- MARCA -->
+            <!-- <h1>Pizza ¡YAPA!</h1> -->
 
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="navigation">
+                <!-- inicio html para menu hambuerguesa -->
+                <input class="checkbox" name=" check" type="checkbox">
+                <i class="icons burguer fi fi-br-menu-burger"></i>
+                <i class="icons cross fi fi-br-cross"></i>
+                <!-- fin html para menu hambuerguesa -->
         
 
+                <ul id="nav-bar">
+                    <li class="nav-bar"><a href="../index.html">Home</a></li>
+                    <!-- <li class="nav-bar"><a href="#Promos">Promos</a></li>
+                    <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
+                    <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
+                    <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
+                    <li class="nav-bar"><a href="menu.html">Menu</a></li>
+                    <li class="nav-bar"><a href="sucursal.html">Sucursal</a></li>
+                    <li class="nav-bar"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav-bar"><a href="quienessomos.html">Quienes somos</a></li>
+                </ul>
+            </nav>
+             <br>
+        </section>
     </header>
-    <main>
-        <!-- Aqui comienza el MAIN -->
-
+    <main class="wrap">
+        <h1 class="tit-principal">~ Nuestras exquiciteces ~</h1>
+        <div class="wrap-title-section">
+          <h2>Pizzas gourmet</h2>
+        </div>
+        <div class="wrap column-2 carta">
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Caribeña</h4>
+              <p>jamon, anana, queso, cerezas</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 3.500</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Rucula</h4>
+              <p>salsa, parmesano, rucula, jamon cocido</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 5.000</span>
+            </div>
+          </div> 
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Primavera</h4>
+              <p>jamon, huevo, morron, aceitunas negras</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 3.800</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Vegetales salteados</h4>
+              <p>frituras de vegetales varios, salsa, parmesano</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 6200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Panceta con verdeo</h4>
+              <p>panceta, cebolla de verdeo, salsa alioli</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 4.500</span>
+            </div>
+          </div>    
+        </div>
+        <div class="wrap-title-section">
+          <h2>Pizzas clasicas</h2>
+        </div>
+        <div class="wrap column-2 carta">
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Mozzarella</h4>
+              <p>Mozzarella, salsa de tomate</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 3.000</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Especial</h4>
+              <p>jamon, salsa, mozzarella, morron</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 4.000</span>
+            </div>
+          </div> 
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Anchoas</h4>
+              <p>Anchoas, muzzarella</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 4.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Fugazzeta</h4>
+              <p>queso , cebolla</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 3.700</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Napolitana</h4>
+              <p>salta de tomate, queso, aceitunas</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 3.600</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Calabresa</h4>
+              <p>cantinpalo, reggianito, olivas</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 4.000</span>
+            </div>
+          </div>   
+        </div>
+        <div class="wrap-title-section">
+          <h2>Empanadas</h2>
+        </div>
+        <div class="wrap column-2 carta">
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Carne suprema</h4>
+              <p>lomo cortado a cuchillo</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Carne</h4>
+              <p>carne picada, </p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div> 
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Jamon y queso</h4>
+              <p>mozzarella, jamon cocido</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.000</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Cebolla y queso</h4>
+              <p>queso cremoso, cebolla blanca</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Roquefort</h4>
+              <p>roquefort, queso, jamon, nuez</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Bondiola a la cerveza</h4>
+              <p>bondiola, salsa</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Panceta</h4>
+              <p>panceta, ciruelas, cebolla</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>
+          <div class="plato-carta">
+            <div class="title-plato-carta">
+              <h4>Pollo</h4>
+              <p>pollo, salasa blanca</p>
+            </div>
+            <div class="precio-plato-carta">
+              <span>$ 1.200</span>
+            </div>
+          </div>   
+        </div>
     </main>
     <footer>
-        <!-- Aqui comienza el FOOTER -->
-
-    </footer>
+      <h3>¡Seguinos en nuestras redes!</h3>
+      <a href="https://www.instagram.com" target="_blank"><img src="/static/img/instagram-logo-24.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="/static/img/facebook-logo-24.png" alt="Facebook"></a>
+      <br><br>
+      <p>© 2024 Pizza ¡YAPA! Derechos Reservados.</p>
+  </footer>
     
 </body>
 
