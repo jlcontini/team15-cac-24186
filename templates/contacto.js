@@ -1,17 +1,35 @@
 
 /* Pagina CONTACTO - Formulario */
 
-const formRegisterBox=document.getElementById("box-form");
-const inputNombre=document.getElementById("nombre");
-const inputApellido=document.getElementById("apellido")
-const inputEmail=document.getElementById("email");
-const inputComent=document.getElementById("coment");
-const inputMoreInfo=document.getElementsById("more-info");
-const inputNewsSuscription=document.getElementById("news-suscription");
-// error - COMO LO INTEGRO??
+/* -- Variables para guardar los datos -- */
+const formRegisterBox=      document.getElementById("box-form");
+const inputNombre=          document.getElementById("nombre");
+const inputApellido=        document.getElementById("apellido")
+const inputEmail=           document.getElementById("email");
+const inputComent=          document.getElementById("coment");
+const inputMoreInfo=        document.getElementById("more-info");
+const inputNewsSuscription= document.getElementById("news-suscription");
+
+// Como integro el error para que aparezca - COMO LO INTEGRO??
 const parrafo=document.getElementById("error");
 
-console.log(inputNombre)
+console.log(inputNombre);
+console.log(inputApellido);
+
+// Validar Formulario - que no sean vacios o que tengan algo. // 
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("formulario").addEventListener("submit");
+} )
+
+function validarFormulario(event) {
+    event.preventDefault();
+    if (inputNombre <= 3) {
+        alert("El nombre debe tener mas de 3 caracteres");
+        return
+    }
+}
+
 
 // const formRegister=document.getElementById("formulario")
 // const inputNombre=document.getElementById("nombre");
@@ -47,7 +65,4 @@ console.log(inputNombre)
 //     formRegister.reset();
 // }
 // })
-
-
-
 

@@ -40,7 +40,8 @@
 
             <div class="box-form-container">
 
-                <form id="box-form" action="mailto:joseluiscontini@yahoo.com.ar" method="post" enctype="text/plain">
+                <form id="box-form" action="validar_enviar()" method="post" enctype="text/plain"></form>
+                <!-- <form id="box-form" action="mailto:joseluiscontini@yahoo.com.ar" method="post" enctype="text/plain"> -->
 
                     <label for="nombre">Nombre: </label>
                     <input type="text" id="nombre" name="nombre" size="30" maxlength="100" placeholder="...su nombre">
@@ -65,12 +66,13 @@
                     
                     </div>
 
-                    <input class="button-submit" type="submit" value="Enviar">
+                    <input name="submit" id="submit" class="button-submit" type="submit" value="Enviar">
 
 
 
 
                 </form>
+
                 <script src="contacto.js"></script>
 
             </div>
