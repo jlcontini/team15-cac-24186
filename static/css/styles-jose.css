@@ -3,11 +3,11 @@
 
 /* <!-- COLORES LOGO "PIZZA ¡YAPA!": ROJO #E40C0C; NEGRO #291010;  --> */
 
-:root {
-    /* pseudo-clase de CSS, selecciona el elemento raíz.
-    Equivale a <HTML> pero con mayor especificidad. */
+/* :root {
+    pseudo-clase de CSS, selecciona el elemento raíz.
+    Equivale a <HTML> pero con mayor especificidad.
 
-}
+} */
 
 * {
     font-family: "";
@@ -49,6 +49,10 @@ body {
 
 body > main {
     background-color: lightblue;
+}
+
+strong {
+    color: #E40C0C;
 }
 
 .promos-big-box {
@@ -276,8 +280,8 @@ footer {
 
 }
 
-.checkbox {
-}
+/* .checkbox {
+} */
 
 .button-submit {
     background-color: ;
@@ -518,3 +522,77 @@ p{
   }
 
   /* Fin CSS agregados MENU Joaquin */
+
+  /* COMIENZO CSS para Quienes somos Emmanuel */
+
+  .foto {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.grid-quienes-somos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.column {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.slider-frame {
+	width: 100%;
+    max-width: 1080px;
+    height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: slide 20s infinite alternate linear;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+footer {
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 720px) {
+    .grid-quienes-somos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes slide {
+	0% {margin-left: 0%;}
+	30% {margin-left: 0%;}
+	
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
+	
+	70% {margin-left: -200%;}
+	100% {margin-left: -200%;}	
+}
+
+/* FIN CSS para Quienes somos Emmanuel */
