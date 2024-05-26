@@ -64,7 +64,6 @@ body > main {
     text-align: center;
     font-size: 2.5em;
     background-color: #e40c0cb6;
-
 }
 
 .flex-container {
@@ -175,12 +174,26 @@ body > main {
 
 }
 
-
-
-
 .nav-bar {
     color: black;
+}
 
+
+/* -- FOOTER -- */
+
+footer {
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
+
+}
+
+.box-redes {
+    margin: 10px;
+}
+
+.strong-footer {
+    color: #291010;
 }
 
 
@@ -229,25 +242,6 @@ body > main {
     margin: 0;
     padding: 20px 0;
     border: 0;
-}
-
-
-/* -- FOOTER -- */
-
-
-footer {
-    padding: 20px;
-    background-color: #E40C0C;
-    text-align: center;
-
-}
-
-.box-redes {
-    margin: 10px;
-}
-
-.strong-footer {
-    color: #291010;
 }
 
 /* -- PAGINA CONTACTO -- */
