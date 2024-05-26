@@ -8,15 +8,14 @@
     <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
     <!-- Enlace con HOJA DE ESTILOS CSS -->
     <link rel="stylesheet" href="./static/css/styles-jose.css">
-
-    <!-- FAVICON A MODIFICAR - cambiar imagen, mantener nombre - imagen a la izquierda del nombre de la pagina -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./static/img/favicon.png">
     <!-- Enlace para icononos "X" y "menu" del menu hamburguesa  -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 
     <link rel="shortcut icon" href="../static/img/favicon.png">
     <!-- Aqui va el TITULO DE LA PAGINA -->
-    <title>Pizza ¡YAPA! - Main</title>
+    <title>Pizza ¡YAPA! - Inicio</title>
 
 </head>
 
@@ -28,7 +27,7 @@
 
             <!-- LOGO HEADER -->
             <!-- COLORES: ROJO #E40C0C; NEGRO #291010;  -->
-            <img src="./static/img/logo/Logo-banner-300x100-transparente.png" alt="Pizza ¡YAPA!">
+            <a href="https://pizzayapa.netlify.app"><img src="./static/img/logo/Logo-banner-300x100-transparente.png" alt="Pizza ¡YAPA!"></a>
             
             <!-- MARCA -->
             <!-- <h1>Pizza ¡YAPA!</h1> -->
@@ -43,15 +42,15 @@
         
 
                 <ul id="nav-bar">
-                    <li class="nav-bar"><a href="#Home">Home</a></li>
+                    <!-- <li class="nav-bar"><a href="#Home">Home</a></li> -->
                     <!-- <li class="nav-bar"><a href="#Promos">Promos</a></li>
                     <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
                     <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
                     <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
-                    <li class="nav-bar"><a href="templates/menu.html">Menu</a></li>
-                    <li class="nav-bar"><a href="templates/sucursal.html">Sucursal</a></li>
-                    <li class="nav-bar"><a href="templates/contacto.html">Contacto</a></li>
-                    <li class="nav-bar"><a href="templates/quienessomos.html">Quienes somos</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/menu.html">Menu</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/sucursal.html">Sucursales</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/contacto.html">Contacto</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/quienessomos.html">Quienes somos</a></li>
                 </ul>
             </nav>
              <br>
@@ -78,7 +77,7 @@
                     <!-- contenedor items hijos -->
                     <div id="promo-1" class="promo-container">
                         <div class="caja-img-promo">
-                            <img class="img-promo" src="/static/img/promos/Napolitana-con-albahaca.webp" alt="">
+                            <img class="img-promo" src="./static/img/promos/Napolitana-con-albahaca.webp" alt="">
                         </div>
                         <div class="caja-info-promo">
                             <p class="nombre-producto">Napolitana (Ajo y Albahaca)</p>
@@ -93,7 +92,7 @@
 
                     <div id="promo-2" class="promo-container">
                         <div class="caja-img-promo">
-                            <img class="img-promo" src="/static/img/promos/jamon.webp" alt="">
+                            <img class="img-promo" src="./static/img/promos/jamon.webp" alt="">
                         </div>
                         <div class="caja-info-promo">
                             <p class="nombre-producto">Jamón</p>
@@ -108,7 +107,7 @@
 
                     <div id="promo-3" class="promo-container">
                         <div class="caja-img-promo">
-                            <img class="img-promo" src="/static/img/promos/magistral.webp" alt="">
+                            <img class="img-promo" src="./static/img/promos/magistral.webp" alt="">
                         </div>
                         <div class="caja-info-promo">
                             <p class="nombre-producto">Magistral</p>
@@ -146,7 +145,7 @@
         
                     <div id="opinion-2" class="opinion">
                         <h3>"...es de otro mundo..."</h3>
-                        <p>"Una de las mejores pizzas que Argentinas que pude probar, de masa crocante, complementa perfecto el gusto que pidas. Yo prefiero la de Jamón y Morrones: es de otro mundo."</p>
+                        <p>"Una de las mejores pizzas Argentinas que pude probar, de masa crocante, complementa perfecto el gusto que pidas. Yo prefiero la de Jamón y Morrones: es de otro mundo."</p>
                     </div>
         
                     <div id="opinion-3" class="opinion">
@@ -194,21 +193,12 @@
 
 
         
-    <footer id="footer">
-
-        <div class="box-footer">
-            <h3>¡Seguinos en nuestras redes!</h3>
-
-            <div class="box-redes">
-                <a href="https://www.instagram.com" target="_blank"><img src="./static/img/instagram-logo-24.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./static/img/facebook-logo-24.png" alt="Facebook"></a>
-            </div>
-            
-            <div class="box-derechos-reservados">
-                <p>© 2024 Pizza ¡YAPA! Derechos Reservados.</p>
-            </div>
-            
-        </div>
+    <footer>
+        <h3>¡Seguinos en nuestras redes!</h3>
+        <div class="box-redes"><a href="https://www.instagram.com" target="_blank"><i style="color: #291010" class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i style="color: #291010" class="fa-brands fa-facebook-f fa-xl"></i></a></div>
+        <br>
+        <p>© 2024 <strong class="strong-footer">Pizza ¡YAPA!</strong> Derechos Reservados.</p>
     </footer>
     
 </body>

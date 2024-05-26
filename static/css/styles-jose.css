@@ -6,15 +6,15 @@
 :root {
     /* pseudo-clase de CSS, selecciona el elemento raíz.
     Equivale a <HTML> pero con mayor especificidad. */
- 
+
 }
 
 * {
     font-family: "";
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
 }
 
 html {
@@ -23,7 +23,7 @@ html {
     color: #291010;        */
     background-color: #fff;
     margin: 0 auto;
-    border: 0; 
+    border: 0;
     padding: 0 20px;
     max-width: 1200px;
     height: 100%;
@@ -34,7 +34,7 @@ header {
 
     background-color: #E40C0C;
     margin: 0;
-    border: 0; 
+    border: 0;
     padding: 0;
 }
 
@@ -43,7 +43,7 @@ body {
     display: block;
     position: center;
     margin: 0;
-    border: 0; 
+    border: 0;
     padding: 0;
 }
 
@@ -53,6 +53,7 @@ body > main {
 
 .promos-big-box {
     background-color: green;
+    width: 100%;
 }
 
 .promos-big-box > h2 {
@@ -76,21 +77,25 @@ body > main {
     padding: 2em;
 }
 
+.flex-container .box-button {
+    text-align: center;
+}
+
 .promo-container {
     background-color: snow;
     box-sizing: content-box;
     margin: 10px 10px;
     border: 3px solid #3b3b30;
     border-radius: 5px;
-    padding: 0; 
-    width: 267px;    
+    padding: 0;
+    width: 267px;
 }
 
 .caja-img-promo {
     width: 265px;
     height: 211px;
-    margin: 0 auto;
-    padding: 5px;
+    /* margin: 0 auto; */
+    /* padding: 5px; */
 }
 
 .caja-info-promo {
@@ -151,7 +156,7 @@ body > main {
 
 .box-background {
     background-color: #E40C0C;
-    background-image: linear-gradient(to bottom, #E40C0C, #e40c0c6a), url("/static/img/pizza-1.jpg");
+    background-image: linear-gradient(to bottom, #E40C0C, #e40c0c6a), url("../img/pizza-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
@@ -171,14 +176,7 @@ body > main {
 }
 
 
-/* -- FOOTER -- */
 
-footer {
-    padding: 20px;
-    background-color: #E40C0C;
-    text-align: center;
-    
-}
 
 .nav-bar {
     color: black;
@@ -230,23 +228,26 @@ footer {
     display: block;
     margin: 0;
     padding: 20px 0;
-    border: 0;   
+    border: 0;
 }
 
 
 /* -- FOOTER -- */
 
-.box-footer {
+
+footer {
+    padding: 20px;
+    background-color: #E40C0C;
+    text-align: center;
 
 }
 
 .box-redes {
-    display: flex;
+    margin: 10px;
 }
 
-.box-redes img {
-    width: 30px;
-
+.strong-footer {
+    color: #291010;
 }
 
 /* -- PAGINA CONTACTO -- */
@@ -304,7 +305,7 @@ padding-bottom: 2rem; /* agregado por joaquin para separar esteticamente del foo
 
 
 .header{
-    
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: fixed;
     left: 0;
@@ -314,23 +315,33 @@ padding-bottom: 2rem; /* agregado por joaquin para separar esteticamente del foo
 }
 .logo-nav-container{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* Inicio de agregado de Emmanuel */
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Fin de agregado de Emmanuel */
     align-items: center;
     background-color: white;
-   
+
+    
+
+
 }
 .header a{
     color: white;
-    text-decoration: none;
+    text-decoration: none;    
+}
+
+.nav-link {
     background-color: black;
-    }
- 
-   
+}
+
 .navigation ul{
     margin: 0;
     padding: 0;
     list-style: none;
-    
+
 }
 .navigation ul li{
     display: inline-block;
@@ -358,7 +369,7 @@ img{
     display: none;
 }
 
-@media only screen and (max-width: 800px) 
+@media only screen and (max-width: 800px)
      {
         .logo-nav-container{
         text-align: center;
@@ -369,23 +380,23 @@ img{
         }
         .checkbox:checked ~ #nav-bar{
             display: block;
-        }   
+        }
         .checkbox , .icons{
             display: block;
             color: #E40C0C;
-            background-color: white ; 
+            background-color: white ;
             font-size: 1.5em;
             position: absolute;
             right: 1em;
             top: 1em;
-            
-                       
+
+
         }
         .checkbox{
             opacity: 0%;
         }
-            
-        
+
+
         .icons{
            font-size: 1.2em;
             pointer-events: none;
@@ -399,17 +410,17 @@ img{
         }
         .checkbox:checked ~ .cross {
             display: block;
-                
+
         }
-        
+
         .navigation ul li{
             display: block;
-            
-            
+
+
         }
-       
-            
-            
+
+
+
      }
 
 /* FIN css agregados por joaquin para el header*/
@@ -423,14 +434,14 @@ img{
     text-align: center;
     margin: 1em;
     border: black;
-       
+
 }
 
 
 h4{
     font-size: 1.5em;
-    
-    
+
+
 }
 p{
     font-style: oblique;
@@ -442,14 +453,14 @@ p{
     margin: 0 auto;
     background-color:lightgray;
   }
-  
+
   .column-2.carta{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
     row-gap: 1rem;
   }
-  
+
   .plato-carta{
     display: flex;
     align-items: center;
@@ -457,18 +468,18 @@ p{
     border-radius: 6px;
     background-color: rgb(243, 239, 11);
   }
-  
+
   .img-plato-carta{
     display: flex;
     flex-basis: 25%;
     justify-content: center;
   }
-  
+
   .img-plato-carta img{
     max-width: 100px;
     max-height: 75px;
   }
-  
+
   .title-plato-carta{
     border: 1px solid #e5e5e5;
     border-bottom: none;
@@ -476,7 +487,7 @@ p{
     flex-basis: 60%;
     padding: 1 1.5rem;
   }
-  
+
   .precio-plato-carta{
     display: flex;
     flex-basis: 15%;
@@ -490,7 +501,7 @@ p{
     margin-bottom: 1em;
     text-align: center;
     font-size: 1.5em;
-    
+
   }
 
 
@@ -499,17 +510,17 @@ p{
     .column-2.carta{
       grid-template-columns: repeat(1,1fr);
     }
-  } 
-   
+  }
+
   @media only screen and (min-width: 600px) and (max-width: 800px) {
     .column-2.carta{
         grid-template-columns: repeat(2,1fr);
       }
-}   
+}
 @media (min-width:800px){
     .column-2.carta{
       grid-template-columns: repeat(3,1fr);
     }
-  } 
+  }
 
   /* Fin CSS agregados MENU Joaquin */
