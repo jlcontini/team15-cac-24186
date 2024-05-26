@@ -7,6 +7,10 @@
     <script src="https://kit.fontawesome.com/845b957349.js" crossorigin="anonymous"></script>
     <!-- Enlace con HOJA DE ESTILOS CSS -->
     <link rel="stylesheet" href="../static/css/styles-jose.css">
+    <!-- Enlace para icononos "X" y "menu" del menu hamburguesa  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+    <link rel="shortcut icon" href="../static/img/favicon.png">
     
     <!-- Aqui va el TITULO DE LA PAGINA -->
     <title>Pizza ¡YAPA! - Sucursales</title>
@@ -14,11 +18,40 @@
 
 <body>
     
-    <header>
+    <header class="header">
         <!-- Aqui comienza el HEADER -->
-
-        <h1 style="text-align:center">PAGINA DE SUCURSAL <br>(Insertar aqui el header y nav)</h1> <!-- ESTO ESD DE REFERENCIA; eliminar al final -->
+        <section id="Home" class="logo-nav-container">
+    
+            <!-- LOGO HEADER -->
+            <!-- COLORES: ROJO #E40C0C; NEGRO #291010;  -->
+            <a href="https://pizzayapa.netlify.app"><img src="../static/img/logo/Logo-banner-300x100-transparente.png" alt="Pizza ¡YAPA!"></a>
+            
+            <!-- MARCA -->
+            <!-- <h1>Pizza ¡YAPA!</h1> -->
+    
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="navigation">
+                <!-- inicio html para menu hambuerguesa -->
+                <input class="checkbox" name=" check" type="checkbox">
+                <i class="icons burguer fi fi-br-menu-burger"></i>
+                <i class="icons cross fi fi-br-cross"></i>
+                <!-- fin html para menu hambuerguesa -->
         
+    
+                <ul id="nav-bar">
+                    <!-- <li class="nav-bar"><a href="#Home">Home</a></li> -->
+                    <!-- <li class="nav-bar"><a href="#Promos">Promos</a></li>
+                    <li class="nav-bar"><a href="#Opiniones">Opiniones</a></li>
+                    <li class="nav-bar"><a href="#Horarios">Horarios</a></li>
+                    <li class="nav-bar"><a href="#Delivery">Delivery</a></li> -->
+                    <li class="nav-bar"><a class="nav-link" href="templates/menu.html">Menu</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/sucursal.html">Sucursales</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/contacto.html">Contacto</a></li>
+                    <li class="nav-bar"><a class="nav-link" href="templates/quienessomos.html">Quienes somos</a></li>
+                </ul>
+            </nav>
+             <br>
+        </section>
     </header>
 
     <main>
@@ -103,8 +136,11 @@
 
     </main>
     <footer>
-        <!-- Aqui comienza el FOOTER -->
-        <h1 style="text-align:center">FOOTER DE REFERENCIA <br>(INSERTAR AQUI EL FOOTER)</h1>
+        <h3>¡Seguinos en nuestras redes!</h3>
+        <div class="box-redes"><a href="https://www.instagram.com" target="_blank"><i style="color: #291010" class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i style="color: #291010" class="fa-brands fa-facebook-f fa-xl"></i></a></div>
+        <br>
+        <p>© 2024 <strong class="strong-footer">Pizza ¡YAPA!</strong> Derechos Reservados.</p>
     </footer>
     
 </body>
