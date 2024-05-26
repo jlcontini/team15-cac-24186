@@ -107,9 +107,9 @@ strong {
     padding: 10px;
 }
 
-.promo-img {
+/* .promo-img {
     max-width: ;
-}
+} */
 
 .nombre-producto {
     display: block;
@@ -284,7 +284,7 @@ footer {
 } */
 
 .button-submit {
-    background-color: ;
+    /* background-color: ; */
     color: black;
     font-size: 1.5rem;
 }
