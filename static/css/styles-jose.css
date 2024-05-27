@@ -250,6 +250,11 @@ footer {
 
 /* -- PAGINA CONTACTO -- */
 
+#box-title-form {
+    display: block;
+    width: 100%;
+}
+
 .box-form-container {
     margin: 0 auto;
     border: 0;
