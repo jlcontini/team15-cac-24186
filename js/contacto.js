@@ -72,7 +72,7 @@ function validarFormulario(evento) {
 
     submit();
     formularioContacto.reset();
-    return formularioValidado // devuelvo los datos capturados en la variable
+    return true // devuelvo los datos capturados en la variable
 }
 
 
