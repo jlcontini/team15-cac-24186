@@ -142,12 +142,21 @@ strong {
 }
 
 .button-pedi-ahora {
-    background-color: rgba(192, 192, 192, 0.566);
-    color: #E40C0C;
+    border: 0.2rem outset #de8e8e;
+    background-color: #E40C0C;
+    color: #291010;
     height: 40px;
     font-size: 1.5rem;
     text-align: center;
 }
+
+.button-pedi-ahora:hover {
+    background-color: #291010;
+    color: #e40c00;
+    border: 0.2rem outset #372727;
+    cursor: pointer;
+}
+
 
 /* -- OPINIONES -- */
 
