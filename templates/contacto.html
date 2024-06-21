@@ -71,7 +71,7 @@
         
             <div class="box-form-container">
 
-                <form name="form-contact" id="form-contact" method="post" enctype="text/plain">
+                <form name="form-contact" id="form-contact" method="post" enctype="text/plain" action="../static/formdata/infoFormularioValidado.php">
                 
                     <label for="nombre">Nombre: </label>
                     <input type="text" id="nombre" name="nombre" size="30" maxlength="100" placeholder="...su nombre">
@@ -88,18 +88,15 @@
                     <div class="more-info">
 
                         <p>Quisiera recibir novedades y ofertas</p>
-                        <input type="radio" name="more-info" value="1" checked><p>Si</p>
+                        <input type="radio" name="more-info" id="more-info" value="1" checked /><p>Si</p>
                         <input type="radio" name="more-info" value="0"><p>No</p>
                         
-                        <input class="checkbox" type="checkbox" name="news-suscription" checked>
+                        <input class="checkbox" type="checkbox" name="news-suscription" id="news-suscription" checked />
                         <p>Suscribirse a nuestra Newsletter</p>
                     
                     </div>
 
-                    <input name="submit" id="submit" class="button-submit" type="submit" value="Enviar">
-
-
-
+                    <input name="submit" id="submit" class="button-submit" type="submit" value="Enviar" onclick="">
 
                 </form>
 
