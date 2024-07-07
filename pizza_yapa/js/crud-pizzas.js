@@ -29,7 +29,7 @@ async function fetchData(url, method, data = null) {
 
 /**
  * Función para comunicarse con el servidor para poder Crear o Actualizar
- * un registro de pelicula
+ * un registro de pizza
  * @returns 
  */
 async function savePizza(){
@@ -48,7 +48,7 @@ async function savePizza(){
     });
     return;
   }
-  // Crea un objeto con los datos de la película
+  // Crea un objeto con los datos de la pizza
   const pizzaData = {
       title: title,
       description: description,
@@ -57,11 +57,11 @@ async function savePizza(){
 
     
   let result = null;
-  // Si hay un idMovie, realiza una petición PUT para actualizar la película existente
+  // Si hay un idMovie, realiza una petición PUT para actualizar la pizza existente
   if(idPizza!==""){
     result = await fetchData(`${BASEURL}/api/pizzas/${idPizza}`, 'PUT', pizzaData);
   }else{
-    // Si no hay idMovie, realiza una petición POST para crear una nueva película
+    // Si no hay idMovie, realiza una petición POST para crear una nueva pizza
     result = await fetchData(`${BASEURL}/api/pizzas/`, 'POST', pizzaData);
   }
   
@@ -78,7 +78,7 @@ async function savePizza(){
 
 
 /**
- * Funcion que permite crear un elemento <tr> para la tabla de peliculas
+ * Funcion que permite crear un elemento <tr> para la tabla de pizzas
  * por medio del uso de template string de JS.
  */
 async function showPizzas(){
@@ -102,7 +102,7 @@ async function showPizzas(){
 }
   
 /**
- * Function que permite eliminar una pelicula del array del localstorage
+ * Function que permite eliminar una pizza del array del localstorage
  * de acuedo al indice del mismo
  * @param {number} id posición del array que se va a eliminar
  */
@@ -123,12 +123,12 @@ function deletePizza(id){
 
 
 /**
- * Function que permite cargar el formulario con los datos de la pelicula 
+ * Function que permite cargar el formulario con los datos de la pizza 
  * para su edición
- * @param {number} id Id de la pelicula que se quiere editar
+ * @param {number} id Id de la pizza que se quiere editar
  */
 async function updatePizza(id){
-  //Buscamos en el servidor la pelicula de acuerdo al id
+  //Buscamos en el servidor la pizza de acuerdo al id
   let response = await fetchData(`${BASEURL}/api/pizzas/${id}`, 'GET');
   const idPizza = document.querySelector('#id-pizza');
   const title = document.querySelector('#title');

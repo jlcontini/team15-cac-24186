@@ -2,7 +2,7 @@ from flask import jsonify, request
 from app.models import Pizza
 
 def index():
-    return jsonify({'message': 'Hello World API Cac-pizzas'})
+    return jsonify({'message': 'Hola mundo API pizzas'})
 
 def create_pizza():
     data = request.json
