@@ -15,9 +15,9 @@
     <!-- Aqui va el TITULO DE LA PAGINA -->
     <title>Pizza ¡YAPA! - Menu</title>
 
-  </head>
+</head>
 
-<body >
+<body>
     <header class="header">
         <!-- Aqui comienza el HEADER -->
         <section id="Home" class="logo-nav-container">
@@ -55,43 +55,59 @@
     </header>
 
     <main> 
-        <section id="form" class="container ">
-            <h2 class="search-title">Gestión del menú</h2>
-            <p class="description" >En esta sección se podra llevar a cabo la gestión de las pizzas del portal</p>
-            <form action="#"  id="form-pizza">
-                <div class="d-flex">
-                    <div class="form-control d-flex-column">
-                        <label for="title">Título</label>
-                        <input type="text" class="input-search" name="title" id="title">
+        <section id="form" class="flex-container">
+
+            <div class="box-form-container">
+
+                <h2 class="subtitle">Gestión del menú</h2>
+                <p class="description" >En esta sección se podrá llevar a cabo la gestión de las pizzas del portal</p>
+                
+                <form action="#"  id="form-pizza" class="">
+                    <div class="d-flex">
+
+                        <div class="form-control d-flex-column">
+                            <label for="title">Título</label>
+                            <input type="text" class="input-search" name="title" id="title">
+                        </div>
+                        
+                        <div class="form-control d-flex-column">
+                            <label for="description">Descripción</label>
+                            <input type="text" class="input-search" name="description" id="description">
+                        </div>
+                        
+                        <div class="form-control d-flex-column">
+                            <label for="banner">Banner</label>
+                            <input type="url" class="input-search" name="banner" id="banner-form">
+                        </div>                
+                        
+                        <input type="hidden"  name="id" id="id-pizza">
+                        
+                        <button class="button-submit" type="button" id="btn-save-pizza">Agregar</button>
+                        
                     </div>
-                    <div class="form-control d-flex-column">
-                        <label for="description">Descripción</label>
-                        <input type="text" class="input-search" name="description" id="description">
-                    </div>
-                    <div class="form-control d-flex-column">
-                        <label for="banner">Banner</label>
-                        <input type="url" class="input-search" name="banner" id="banner-form">
-                    </div>                
-                    <input type="hidden"  name="id" id="id-pizza">
-                    <button class="btn-cac" type="button" id="btn-save-pizza">Agregar</button>
                 </div>
             </form> 
         </section>
-        <section id="list" class="container">
-            <h3 class="subtitle">Listado de pizzas</h3>
-            <table id="list-table-pizzas" class="table">
-                <thead>
-                    <tr>
-                        <th>Título</th>
-                        <th>Descripción</th>
-                        <th>Banner</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody-table-pizzas">
-                    
-                </tbody>
-            </table>
+        
+        <section id="list" class="box-form-container">
+            
+            <div class="box-pizza-list">
+                <h3 class="subtitle">Listado de pizzas</h3>
+                
+                <table id="list-table-pizzas" class="table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Banner</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-table-pizzas">
+                        
+                    </tbody>
+                </table>
+            </div>
         </section>  
     </main>
     <!-- Indicar el pie de página -->

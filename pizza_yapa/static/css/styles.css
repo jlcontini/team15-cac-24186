@@ -292,6 +292,33 @@ footer {
     font-weight: 400;
 }
 
+.box-pizza-list {
+    margin: 0 auto;
+    border: 0;
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    color: #480909;
+}
+
+.box-form-container p {
+    padding: 5px 0 15px;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    color: #480909;
+}
+
+.list-table-pizzas {
+    margin: 0 auto;
+    border: 0;
+    padding: 10px;
+}
+
 .more-info > input, .more-info p  {
     margin: 0 auto;
 
@@ -304,6 +331,8 @@ footer {
     /* background-color: ; */
     color: black;
     font-size: 1.5rem;
+    width: 120px;
+    height: 40px;
 }
 
 /* COMIENZA css agregados por joaquin para el header*/
